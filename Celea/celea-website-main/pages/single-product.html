@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Product Page Design</title>
+    <link rel="stylesheet" href="../css/single-product.css">
+
+</head>
+<body>
+    <section class="main-wrap">
+        <div class="product">
+            <div class="image-gallery">
+                <div class="main-image">
+                    <img src="../images\images/img1.jpg" id="productImg" alt="">
+                </div>
+                <div class="thumbnails">
+                    <img src="../images\images/img1.jpg" alt="Thumbnail 1" onclick="changeImage(this)" class="active">
+                    <img src="../images\images/img2.jpg" alt="Thumbnail 2" onclick="changeImage(this)">
+                    <img src="../images\images/img3.jpg" alt="Thumbnail 3" onclick="changeImage(this)">
+                </div>
+            </div>
+            <div class="product-details">
+                <div class="details">
+                    <h2>barrier butter</h2>
+                    <h3>THE INTENSIVE MOISTURE BALM</h3>
+                    <h4>35% OFF</h4>
+                    <p>An intensive moisture balm for deep hydration overnight. Our buttery-smooth formula is a supercharged addition to your nighttime routine. It helps strengthen the skin barrier and seal in moisture for up to 24 hours*—restoring skin's natural softness and bounce. </p>
+                </div>
+                <div class="sizes">
+                    <h3>Size:</h3>
+                    <div class="size-buttons">
+                        <button class="size-btn active" onclick="selectSize(this)">Big - for your shelf</button>
+                        <button class="size-btn" onclick="selectSize(this)">Small - for on the go</button>
+                    </div>
+                </div>
+            
+                <div class="quantity">
+                    <div class="select-quantity">
+                        <h3>Quantity:</h3>
+                        <input type="number" name="quantity" value="1">
+                    </div>
+                </div>
+                
+                <div class="sub-btn">
+                    <button class="submit">Buy Now - $38.00</button>
+                </div>
+                <div class="separator"></div>
+
+                <div class="ingredients">
+                    <h3>Key Ingredients:</h3>
+                    <p>HYALURONIC ACID COMPLEX — 5 molecular weights of HA help improve hydration on and below the skin’s surface
+                        POLYGLUTAMIC ACID (AKA PGA) — an ultra-hydrating, skin-plumping humectant that helps lock in moisture
+                        MURUMURU BUTTER — a nourishing emollient that helps seal in moisture to decrease transepidermal water loss
+                        CERAMIDE NP — a skin-identical lipid concentrate that helps reinforce the skin’s natural barrier</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src ="../js/single-product.js"></script>
+    
+</body>
+</html>
