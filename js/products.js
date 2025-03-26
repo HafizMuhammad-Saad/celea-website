@@ -53,7 +53,7 @@ const products = [
       price: 799,
       category: "makeup",
       image:
-        "/images/images/c3cb2405-536c-43b9-b9e5-c4cb01d6a5e1.webp",
+        "../images/images/c3cb2405-536c-43b9-b9e5-c4cb01d6a5e1.webp",
     },
     {
       id: 8,
@@ -61,7 +61,7 @@ const products = [
       price: 499,
       category: "makeup",
       image:
-        "/images/images/a-single-matte-lipstick-sleek-and-luxuri_YeO7fo1GTNS6SRwcU0Htdg_pRmv0y3sQ3qnSxC47aFYDg.jpeg",
+        "../images/images/a-single-matte-lipstick-sleek-and-luxuri_YeO7fo1GTNS6SRwcU0Htdg_pRmv0y3sQ3qnSxC47aFYDg.jpeg",
     },
     {
       id: 9,
@@ -69,7 +69,7 @@ const products = [
       price: 599,
       category: "makeup",
       image:
-        "/images/images/a-single-matte-lipstick-sleek-and-luxuri_QiB7s4eUT7yBoxzFf6d8sw_pRmv0y3sQ3qnSxC47aFYDg.jpeg",
+        "../images/images/a-single-matte-lipstick-sleek-and-luxuri_QiB7s4eUT7yBoxzFf6d8sw_pRmv0y3sQ3qnSxC47aFYDg.jpeg",
     },
     {
       id: 10,
@@ -77,7 +77,7 @@ const products = [
       price: 399,
       category: "makeup",
       image:
-        "/images/images/face.webp",
+        "../images/images/face.webp",
     },
     {
       id: 11,
@@ -85,7 +85,7 @@ const products = [
       price: 649,
       category: "makeup",
       image:
-        "/images/images/mascara.webp",
+        "../images/images/mascara.webp",
     },
     {
       id: 12,
@@ -93,7 +93,7 @@ const products = [
       price: 299,
       category: "makeup",
       image:
-        "/images/images/face.webp",
+        "../images/images/face.webp",
     },
     {
       id: 13,
@@ -101,7 +101,7 @@ const products = [
       price: 899,
       category: "makeup",
       image:
-        "/images/images/primer.webp",
+        "../images/images/primer.webp",
     },
     {
       id: 14,
@@ -109,7 +109,7 @@ const products = [
       price: 399,
       category: "makeup",
       image:
-        "/images/images/powder.webp",
+        "../images/images/powder.webp",
     },
     {
       id: 15,
@@ -117,7 +117,7 @@ const products = [
       price: 299,
       category: "makeup",
       image:
-        "/images/images/c3cb2405-536c-43b9-b9e5-c4cb01d6a5e1 (1).webp",
+        "../images/images/c3cb2405-536c-43b9-b9e5-c4cb01d6a5e1 (1).webp",
     },
     {
       id: 16,
@@ -125,7 +125,7 @@ const products = [
       price: 559,
       category: "makeup",
       image:
-        "/images/images/spray.webp",
+        "../images/images/spray.webp",
     },
   ];
 
