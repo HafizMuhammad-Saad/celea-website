@@ -11,14 +11,19 @@
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
-  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  /* background: linear-gradient(to right, #ff9a9e, #fad0c4); */
   padding: 10px 0;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
 }
 
 .scrolling-text p {
+  display: inline-block;
+  animation: scrollText 10s linear infinite;
+}
+
+.scrolling-text img {
   display: inline-block;
   animation: scrollText 10s linear infinite;
 }
@@ -31,6 +36,178 @@
     transform: translateX(-100%);
   }
 }
+
+/* Deal of the Day Section */
+.deal-of-the-day {
+  position: relative;
+  background: linear-gradient(135deg, #ffe0e6, #ffcad4);
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deal-text {
+  z-index: 2;
+  flex: 1 1 300px;
+  text-align: left;
+  color: #4a3d37;
+  animation: fadeInUp 1s ease-out;
+}
+
+.deal-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.deal-text h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 50px;
+  height: 3px;
+  background-color: #ff758c;
+  border-radius: 2px;
+}
+
+.countdown {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  animation: slideIn 1s ease-out;
+}
+
+.countdown-box {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  width: 80px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.countdown-box:hover {
+  transform: scale(1.05);
+}
+
+.countdown-box .number {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff4e50;
+}
+
+.countdown-box .label {
+  font-size: 0.85rem;
+  color: #4a3d37;
+}
+
+.btn-primary {
+  background-color: #ff4e50;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary:hover {
+  background-color: #ff758c;
+  transform: translateY(-3px);
+}
+
+/* Decorative Shapes */
+.deal-shapes {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.shape-circle {
+  position: absolute;
+  background: rgba(255, 120, 170, 0.3);
+  border-radius: 50%;
+  animation: floatEffect 6s ease-in-out infinite;
+}
+
+/* Different circle sizes and positions */
+.circle-1 {
+  width: 80px;
+  height: 80px;
+  top: -20px;
+  right: -20px;
+}
+
+.circle-2 {
+  width: 50px;
+  height: 50px;
+  bottom: 10%;
+  left: -25px;
+  animation-delay: 1s;
+}
+
+.circle-3 {
+  width: 100px;
+  height: 100px;
+  bottom: -30px;
+  right: 10%;
+  animation-delay: 2s;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes floatEffect {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 
   </style>
 
@@ -214,7 +391,7 @@
     <!-- FEATURED BRANDS -->
     <section class="featured-brands">
       <h2>FEATURED BRANDS</h2>
-      <div class="featured-brands-logos">
+      <div class="featured-brands-logos scrolling-text">
         <!-- Example brand logos -->
         <img src="./images/images/B2.png" alt="Brand 2" />
         <img src="./images/images/B3.png" alt="Brand 3" />
