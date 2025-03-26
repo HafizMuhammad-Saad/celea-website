@@ -18,7 +18,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #e4cade 0%, #d8bad1 25%, #e8d7cc 40%, #F5EDE0 55%, #F5EDE0 100%);
+    background: #f5ede0;
 }
 .main-wrap {
 
