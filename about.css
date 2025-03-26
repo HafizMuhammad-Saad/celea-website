@@ -1,0 +1,1486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact-child {
+    position: absolute;
+    top: 254px;
+    left: 51px;
+    border-radius: 25px;
+    width: 1178px;
+    height: 751px;
+    object-fit: cover;
+    padding-top: 1px
+}
+.nav-bg {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 608px);
+    border-radius: 13.42px;
+    background-color: #1c1b19;
+    width: 1194px;
+    height: 84px;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+}
+.celea {
+    position: absolute;
+    top: 2.1px;
+    left: -496.02px;
+}
+.header1 {
+    background-color: #fdf8f3;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .navbar, 
+.nav-links a, 
+.logo, 
+.cart-button, 
+.search-bar input {
+    font-family: 'Poppins', sans-serif;
+}
+  
+  .navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4a3d37;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: black;  /* Default color */
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ba9a8e; /* Skin-orange hover effect */
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    flex-wrap: nowrap;
+}
+
+/* SEARCH BAR */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 2px solid #ba9a8e;
+    border-radius: 4px;
+    padding: 8px 12px;
+    width: 220px;
+    height: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+}
+
+/* SEARCH INPUT */
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: transparent;
+}
+
+/* SEARCH ICON */
+.search-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+
+
+  .footer {
+    background-color: #4a3d37;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 40px;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1230px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    min-height: 350px; /* Increased size */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px; /* Prevents content from stretching */
+    text-align: left;
+}
+
+.footer h3,
+.footer h4 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem; /* Slightly bigger for better readability */
+}
+
+.footer p, 
+.footer ul {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li,
+.footer-socials li {
+    margin-bottom: 0.6rem;
+    cursor: pointer;
+}
+
+.footer-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-socials li:hover {
+    text-decoration: underline;
+}
+
+/* Subscribe Section */
+.footer-subscribe {
+    display: flex;
+    gap: 0.7rem;
+    margin-top: 1rem;
+}
+
+.footer-subscribe input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    flex: 1;
+    font-size: 1rem;
+}
+
+.footer-subscribe button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #ba9a8e;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Ensures No Horizontal Overflow */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .footer-section {
+        max-width: 100%;
+    }
+
+    .footer-subscribe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-subscribe input {
+        width: 100%;
+    }
+}
+
+.logo {
+    width: 146px;
+    position: relative;
+    height: 51.2px;
+}
+.logo-wrapper {
+    position: absolute;
+    top: 10.9px;
+    left: calc(50% - 72.98px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 53.69px;
+    font-family: Valky;
+}
+.header1 {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    color: var(--accent-black);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+    animation: titleFloat 3s ease-in-out infinite;
+  }
+
+.best-selling-products {
+    position: absolute;
+    top: 90px;
+    left: calc(50% - 392px);
+    line-height: 142px;
+    display: inline-block;
+    width: 783px;
+}
+.all-time-best {
+    position: absolute;
+    top: 452px;
+    left: calc(50% - 417px);
+    font-size: 22px;
+    line-height: 38px;
+    font-weight: 500;
+    font-family: Inter;
+    display: inline-block;
+    width: 824px;
+}
+.copy {
+    position: absolute;
+    top: 2520px;
+    left: 228px;
+    width: 824px;
+    height: 394px;
+    font-size: 142px;
+    font-family: Valky;
+}
+.contact-child {
+    position: absolute;
+    top: 2799px;
+    left: 1064px;
+    border-radius: 2px;
+    width: 98px;
+    height: 91px;
+}
+.contact-item {
+    position: absolute;
+    top: 2502px;
+    left: 146px;
+    border-radius: 1.44px;
+    width: 72px;
+    height: 72px;
+}
+.care-for-your {
+    position: absolute;
+    top: 149px;
+    left: calc(50% - 15.5px);
+    display: inline-block;
+    width: 559px;
+}
+.flower-icon {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 543.5px);
+    width: 610px;
+    height: 470.6px;
+    object-fit: contain;
+}
+.care-for-your-skin-care-for-y-parent {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 1025.5px);
+    width: 1087px;
+    height: 470.6px;
+    font-size: 82px;
+    color: #201e1c;
+    font-family: Valky;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 659px);
+    border-radius: 9px;
+    background-color: #f5ede0;
+    border: 3px solid rgba(28, 27, 25, 0.5);
+    box-sizing: border-box;
+    width: 1318px;
+    height: 106px;
+}
+.featured-brands {
+    position: absolute;
+    top: 7px;
+    left: calc(50% - 272px);
+    display: inline-block;
+    width: 569px;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 609px;
+    left: calc(50% - 1107.5px);
+    width: 1318px;
+    height: 106px;
+    font-size: 64px;
+    color: #3d3b40;
+}
+.bobbi-brown-kurppa-hosk-remo-icon {
+    position: absolute;
+    top: 0px;
+    left: 317px;
+    width: 572.3px;
+    height: 65px;
+    object-fit: cover;
+}
+.a67fc258-54eb-4394-a95a-a6d034-icon {
+    position: absolute;
+    top: 0px;
+    left: 985px;
+    width: 305.9px;
+    height: 65px;
+    object-fit: cover;
+}
+.download-19-removebg-preview-icon {
+    position: absolute;
+    top: 0px;
+    left: 3141px;
+    width: 400.8px;
+    height: 65px;
+    object-fit: cover;
+}
+.download-18-removebg-preview-icon {
+    position: absolute;
+    top: 0px;
+    left: 3637px;
+    width: 452px;
+    height: 65px;
+    object-fit: cover;
+}
+.revlon-removebg-preview-icon {
+    position: absolute;
+    top: 0px;
+    left: 1386px;
+    width: 212px;
+    height: 65px;
+    object-fit: cover;
+}
+.download-22-removebg-preview-icon {
+    position: absolute;
+    top: 0px;
+    left: 2180px;
+    width: 283.8px;
+    height: 65px;
+    object-fit: cover;
+}
+.download-21-removebg-preview-icon {
+    position: absolute;
+    top: 0px;
+    left: 2559px;
+    width: 486.7px;
+    height: 65px;
+    object-fit: cover;
+}
+.download-20-removebg-preview-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 221.5px;
+    height: 65px;
+    object-fit: cover;
+}
+.urban-decay-logo-png-vector-f-icon {
+    position: absolute;
+    top: 0px;
+    left: 4184px;
+    width: 364.3px;
+    height: 65px;
+    object-fit: cover;
+}
+.designer-clothes-shoes-bags-icon {
+    position: absolute;
+    top: 0px;
+    left: 1693px;
+    width: 391.6px;
+    height: 65px;
+    object-fit: cover;
+}
+.brand-2 {
+    position: absolute;
+    top: 67px;
+    left: 68px;
+    width: 4548.3px;
+    height: 65px;
+}
+.brand-2-wrapper {
+    position: absolute;
+    top: 837px;
+    left: 19px;
+    width: 2196px;
+    height: 187px;
+}
+.group-item {
+    position: absolute;
+    top: 98px;
+    left: 0px;
+    border-radius: 0px 150px 0px 150px;
+    background-color: #c4a484;
+    width: 958px;
+    height: 473px;
+}
+.group-inner {
+    position: absolute;
+    top: 21.4px;
+    left: 76.42px;
+    background-color: #f5ede0;
+    width: 164.9px;
+    height: 116.1px;
+}
+.exclusive-deal-of {
+    position: absolute;
+    top: 177px;
+    left: calc(50% - 375px);
+    text-transform: capitalize;
+    display: inline-block;
+    width: 800.4px;
+}
+.rectangle-div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+}
+.div {
+    position: absolute;
+    top: 21px;
+    left: 39px;
+    text-transform: capitalize;
+}
+.days {
+    position: absolute;
+    top: 70px;
+    left: 33px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.rectangle-container {
+    width: 100px;
+    position: relative;
+    height: 100px;
+}
+.div1 {
+    position: absolute;
+    top: 21px;
+    left: 28px;
+    text-transform: capitalize;
+}
+.hours {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.minutes {
+    position: absolute;
+    top: 70px;
+    left: 26px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.frame-div {
+    position: absolute;
+    top: 301px;
+    left: 104px;
+    width: 389.3px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: 40px;
+    font-family: Roboto;
+}
+.shop-now {
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.shop-now-wrapper {
+    position: absolute;
+    top: 441px;
+    left: 104px;
+    border-radius: 8px;
+    background-color: #4a2c2c;
+    width: 113.5px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 14px 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #fff;
+    font-family: Inter;
+}
+.ellipse-div {
+    position: absolute;
+    top: 0px;
+    left: 94.07px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child3 {
+    position: absolute;
+    top: 25.85px;
+    left: 94.07px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child4 {
+    position: absolute;
+    top: 51.7px;
+    left: 94.07px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child5 {
+    position: absolute;
+    top: 77.54px;
+    left: 94.07px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child6 {
+    position: absolute;
+    top: 103.39px;
+    left: 94.07px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child7 {
+    position: absolute;
+    top: 0px;
+    left: 121.94px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child8 {
+    position: absolute;
+    top: 25.85px;
+    left: 121.94px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child9 {
+    position: absolute;
+    top: 51.7px;
+    left: 121.94px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child10 {
+    position: absolute;
+    top: 77.54px;
+    left: 121.94px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child11 {
+    position: absolute;
+    top: 103.39px;
+    left: 121.94px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child12 {
+    position: absolute;
+    top: 0px;
+    left: 149.81px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child13 {
+    position: absolute;
+    top: 25.85px;
+    left: 149.81px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child14 {
+    position: absolute;
+    top: 51.7px;
+    left: 149.81px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child15 {
+    position: absolute;
+    top: 77.54px;
+    left: 149.81px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child16 {
+    position: absolute;
+    top: 103.39px;
+    left: 149.81px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child17 {
+    position: absolute;
+    top: 0px;
+    left: 177.68px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child18 {
+    position: absolute;
+    top: 25.85px;
+    left: 177.68px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child19 {
+    position: absolute;
+    top: 51.7px;
+    left: 177.68px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child20 {
+    position: absolute;
+    top: 77.54px;
+    left: 177.68px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child21 {
+    position: absolute;
+    top: 103.39px;
+    left: 177.68px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child22 {
+    position: absolute;
+    top: 0px;
+    left: 205.55px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child23 {
+    position: absolute;
+    top: 25.85px;
+    left: 205.55px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child24 {
+    position: absolute;
+    top: 51.7px;
+    left: 205.55px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child25 {
+    position: absolute;
+    top: 77.54px;
+    left: 205.55px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.group-child26 {
+    position: absolute;
+    top: 103.39px;
+    left: 205.55px;
+    border-radius: 50%;
+    background-color: #4a2c2c;
+    width: 20.4px;
+    height: 19.6px;
+}
+.rectangle-group {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 958px;
+    height: 571px;
+}
+.ellipse-icon {
+    position: absolute;
+    top: 291px;
+    left: 664px;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+}
+.group-container {
+    position: absolute;
+    top: 1202px;
+    left: 180px;
+    width: 958px;
+    height: 571px;
+}
+.subscribe-to-get {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 494px);
+    text-transform: capitalize;
+}
+.rectangle-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 47px;
+    width: 822px;
+    height: 76.8px;
+}
+.email-address {
+    position: absolute;
+    top: 26px;
+    left: 51px;
+    text-transform: capitalize;
+    display: inline-block;
+    width: 183px;
+    height: 26px;
+}
+.group-child27 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 47px;
+    width: 270px;
+    height: 76.8px;
+}
+.shop-now1 {
+    position: absolute;
+    top: 25px;
+    left: 90.83px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    display: inline-block;
+    font-weight: 100;
+    width: 135px;
+    height: 25px;
+    text-shadow: 1px 0 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+.vector-group {
+    position: absolute;
+    top: 0px;
+    left: 551.17px;
+    width: 270px;
+    height: 76.8px;
+    font-size: 18px;
+    color: #fff;
+}
+.vector-parent {
+    position: absolute;
+    top: 169px;
+    left: 86px;
+    width: 822px;
+    height: 76.8px;
+    font-size: 20px;
+    font-family: Poppins;
+}
+.subscribe-to-get-10-extra-dis-parent {
+    position: absolute;
+    top: 1951px;
+    left: calc(50% - 954.5px);
+    width: 988px;
+    height: 245.8px;
+}
+.group-parent {
+    position: absolute;
+    top: 4413px;
+    left: calc(50% - 659px);
+    width: 2215px;
+    height: 2196.8px;
+    text-align: left;
+    font-size: 60px;
+    color: #4a2c2c;
+    font-family: 'Rozha One';
+}
+.contact-information {
+    position: absolute;
+    top: 33px;
+    left: 916px;
+    line-height: 116.53%;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    width: 265.8px;
+    height: 51px;
+}
+.blank-line {
+    margin: 0;
+}
+.span {
+    font-size: 16px;
+}
+.email-celeaskincaregmailcom {
+    position: absolute;
+    top: 97px;
+    left: 929px;
+    line-height: 116.53%;
+    display: inline-block;
+    font-weight: 300;
+    width: 262px;
+    height: 165px;
+    font-size: 14px;
+}
+.celea-all-rights {
+    position: absolute;
+    top: 236px;
+    left: 89px;
+    font-size: 16px;
+    line-height: 116.53%;
+    display: inline-block;
+    font-weight: 200;
+    color: #aaa8a8;
+    width: 596px;
+    height: 27px;
+}
+.stay-updated {
+    position: absolute;
+    top: 33px;
+    left: 620px;
+    line-height: 116.53%;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    width: 179.6px;
+    height: 33px;
+}
+.subscribe-to-our {
+    position: absolute;
+    top: 74px;
+    left: 624px;
+    font-size: 13px;
+    line-height: 116.53%;
+    display: inline-block;
+    width: 269px;
+    height: 24px;
+}
+.group-child29 {
+    position: absolute;
+    top: 106px;
+    left: 624px;
+    background-color: #dcdcdc;
+    width: 231px;
+    height: 38px;
+}
+.enter-your-email {
+    position: absolute;
+    top: 117px;
+    left: 633px;
+    font-size: 13px;
+    line-height: 116.53%;
+    display: inline-block;
+    font-weight: 300;
+    color: #aaa8a8;
+    width: 200px;
+    height: 39px;
+}
+.group-child30 {
+    position: absolute;
+    top: 163px;
+    left: 624px;
+    border-radius: 10px;
+    background-color: #7b4d4c;
+    width: 86px;
+    height: 32px;
+}
+.submit {
+    position: absolute;
+    top: 171px;
+    left: 645px;
+    font-size: 13px;
+    line-height: 116.53%;
+    display: inline-block;
+    font-weight: 200;
+    color: #fff;
+    width: 73.8px;
+    height: 27px;
+}
+.follow-us {
+    position: absolute;
+    top: 34px;
+    left: 331px;
+    line-height: 116.53%;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    width: 156.4px;
+    height: 235px;
+}
+.facebook-instagram-youtube-container {
+    position: absolute;
+    top: 93px;
+    left: 332px;
+    font-size: 16px;
+    line-height: 116.53%;
+    text-align: center;
+    display: inline-block;
+    width: 158px;
+    height: 109px;
+    cursor: pointer;
+}
+.vector-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1280px;
+    height: 269px;
+}
+.quick-links {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 116.53%;
+    font-weight: 500;
+    display: inline-block;
+    width: 179px;
+    height: 37px;
+}
+.home-about-contact-container {
+    position: absolute;
+    top: 59px;
+    left: 41px;
+    font-size: 16px;
+    line-height: 116.53%;
+    display: inline-block;
+    width: 92px;
+    height: 103px;
+}
+.quick-links-parent {
+    position: absolute;
+    top: 37px;
+    left: 64px;
+    width: 179px;
+    height: 162px;
+    text-align: center;
+}
+.footer {
+    position: absolute;
+    top: 6842px;
+    left: 0px;
+    width: 1280px;
+    height: 269px;
+    text-align: left;
+    font-size: 24px;
+    font-family: Poppins;
+}
+.contact-inner {
+    position: absolute;
+    top: 3151px;
+    left: 690px;
+    border-radius: 13px;
+    background-color: #fff;
+    width: 450px;
+    height: 514px;
+}
+.honey-glow-mask {
+    position: absolute;
+    top: 3584px;
+    left: 729px;
+    font-weight: 600;
+    display: inline-block;
+    width: 162px;
+    height: 20px;
+}
+.div3 {
+    position: absolute;
+    top: 3620px;
+    left: 729px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+    display: inline-block;
+    width: 67px;
+    height: 17px;
+}
+.contact-child1 {
+    position: absolute;
+    top: 3151px;
+    left: 154px;
+    border-radius: 13px;
+    background-color: #fff;
+    width: 450px;
+    height: 514px;
+}
+.glow-serum {
+    position: absolute;
+    top: 3584px;
+    left: 172px;
+    font-weight: 600;
+    display: inline-block;
+    width: 162px;
+    height: 20px;
+}
+.div4 {
+    position: absolute;
+    top: 3620px;
+    left: 193px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+    display: inline-block;
+    width: 67px;
+    height: 17px;
+}
+.contact-child2 {
+    position: absolute;
+    top: 3815px;
+    left: 154px;
+    border-radius: 13px;
+    background-color: #fff;
+    width: 450px;
+    height: 514px;
+}
+.brightening-ampoule {
+    position: absolute;
+    top: 4248px;
+    left: 196px;
+    font-weight: 600;
+    display: inline-block;
+    width: 193px;
+    height: 20px;
+}
+.div5 {
+    position: absolute;
+    top: 4284px;
+    left: 193px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+    display: inline-block;
+    width: 67px;
+    height: 17px;
+}
+.contact-child3 {
+    position: absolute;
+    top: 3815px;
+    left: 690px;
+    border-radius: 13px;
+    background-color: #fff;
+    width: 450px;
+    height: 514px;
+}
+.cleansing-oil {
+    position: absolute;
+    top: 4248px;
+    left: 713px;
+    font-weight: 600;
+    display: inline-block;
+    width: 162px;
+    height: 20px;
+}
+.div6 {
+    position: absolute;
+    top: 4284px;
+    left: 729px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+    display: inline-block;
+    width: 67px;
+    height: 17px;
+}
+.contact-child4 {
+    position: absolute;
+    top: 3193px;
+    left: 181px;
+    width: 396px;
+    height: 363px;
+    object-fit: cover;
+}
+.contact-child5 {
+    position: absolute;
+    top: 3187px;
+    left: 714px;
+    width: 402px;
+    height: 376px;
+    object-fit: cover;
+}
+.contact-child6 {
+    position: absolute;
+    top: 3851px;
+    left: 178px;
+    width: 402px;
+    height: 376px;
+    object-fit: cover;
+}
+.contact-child7 {
+    position: absolute;
+    top: 3851px;
+    left: 714px;
+    width: 402px;
+    height: 376px;
+    object-fit: cover;
+}
+.contact-child8 {
+    position: absolute;
+    top: 216px;
+    left: -36px;
+    width: 1279px;
+    height: 639px;
+    object-fit: cover;
+}
+.nav-bg {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 608px);
+    border-radius: 13.42px;
+    background-color: #1c1b19;
+    width: 1194px;
+    height: 84px;
+}
+.celea {
+    position: absolute;
+    top: 2.1px;
+    left: -496.02px;
+}
+.logo {
+    width: 146px;
+    position: relative;
+    height: 51.2px;
+}
+.logo-wrapper {
+    position: absolute;
+    top: 10.9px;
+    left: calc(50% - 72.98px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 53.69px;
+    font-family: Valky;
+}
+.cart {
+    position: relative;
+    font-weight: 600;
+}
+.frame-child {
+    width: 41.9px;
+    position: relative;
+    border-radius: 6.71px;
+    background-color: #eeeae1;
+    height: 41.9px;
+    z-index: 0;
+}
+.cart-icon {
+    width: 27.7px;
+    position: absolute;
+    margin: 0 !important;
+    top: 7.55px;
+    left: 7.55px;
+    height: 26.8px;
+    z-index: 1;
+}
+.rectangle-parent2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    gap: 8.4px;
+}
+.cart-button {
+    position: absolute;
+    top: 16px;
+    left: 960px;
+    border-radius: 6.71px;
+    background-color: #f5ede0;
+    width: 145px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10.1px 20.1px;
+    box-sizing: border-box;
+    gap: 10.9px;
+    color: #3d3b40;
+}
+.home1 {
+    position: relative;
+    font-weight: 500;
+    z-index: 4;
+}
+.shop {
+    position: relative;
+    font-weight: 500;
+    z-index: 3;
+}
+.about1 {
+    position: relative;
+    font-weight: 500;
+    z-index: 2;
+}
+.contact2 {
+    position: relative;
+    font-weight: 500;
+    z-index: 1;
+}
+.account {
+    position: relative;
+    font-weight: 500;
+    z-index: 0;
+}
+.options {
+    position: absolute;
+    top: 25px;
+    left: 203px;
+    width: 774px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 8.4px 87px;
+    box-sizing: border-box;
+    gap: 0px;
+}
+.navigation {
+    position: absolute;
+    top: 60px;
+    left: calc(50% - 542px);
+    width: 1100px;
+    height: 84px;
+    text-align: left;
+    color: #f5ede0;
+}
+.group-child31 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 430px);
+    border-radius: 24px;
+    background-color: #f5ede0;
+    border: 1px solid rgba(28, 27, 25, 0.5);
+    box-sizing: border-box;
+    width: 860px;
+    height: 268.5px;
+}
+.hey-hi-hello {
+    position: absolute;
+    top: 46.34px;
+    left: calc(50% - 312px);
+    display: inline-block;
+    width: 661px;
+    height: 112.9px;
+}
+.were-celea-your {
+    position: absolute;
+    top: 196.52px;
+    left: calc(50% - 233px);
+    font-size: 22px;
+    font-family: Montserrat;
+    display: inline-block;
+    width: 465px;
+    height: 24px;
+}
+.rectangle-parent3 {
+    position: absolute;
+    top: 300px;
+    left: calc(50% - 458px);
+    width: 860px;
+    height: 268.5px;
+    text-align: left;
+    font-size: 112px;
+    font-family: Valky;
+}
+.e020a06cd060f1e14a0cdefc-3-icon {
+    position: absolute;
+    top: 272px;
+    left: calc(50% + 17.5px);
+    border-radius: 10.73px;
+    width: 461px;
+    height: 443px;
+    object-fit: cover;
+}
+.meet-the-celea {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 478.5px);
+    text-decoration: underline;
+    display: inline-block;
+    width: 922px;
+}
+.at-celea-we-container {
+    position: absolute;
+    top: 272px;
+    left: calc(50% - 478.5px);
+    font-size: 17px;
+    line-height: 38px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Inter;
+    text-align: justify;
+    display: inline-block;
+    width: 437px;
+    height: 267px;
+}
+.e020a06cd060f1e14a0cdefc-3-parent {
+    position: absolute;
+    top: 139px;
+    left: calc(50% - 462.5px);
+    width: 957px;
+    height: 715px;
+}
+.star-icon {
+    position: absolute;
+    top: 0px;
+    left: 919px;
+    border-radius: 2px;
+    width: 100px;
+    height: 100px;
+}
+.group-child32 {
+    position: absolute;
+    top: 295px;
+    left: 0px;
+    border-radius: 1.44px;
+    width: 72px;
+    height: 72px;
+}
+.group-parent1 {
+    position: absolute;
+    top: 876px;
+    left: calc(50% - 540px);
+    width: 1019px;
+    height: 854px;
+    font-size: 96px;
+    font-family: Valky;
+}
+.item-1 {
+    position: absolute;
+    top: 1593px;
+    left: 669.5px;
+    width: 256px;
+    height: 1px;
+}
+.contact-child9 {
+    position: absolute;
+    top: 1820px;
+    left: 100px;
+    border-radius: 1.44px;
+    width: 72px;
+    height: 72px;
+}
+.contact-child10 {
+    position: absolute;
+    top: 1922px;
+    left: 136px;
+    border-radius: 15px;
+    width: 979px;
+    height: 538px;
+    object-fit: cover;
+}
+.contact {
+    width: 100%;
+    position: relative;
+    background-color: #f5ede0;
+    height: 7111px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+    color: #3d3b40;
+    font-family: Inter;
+}
+
