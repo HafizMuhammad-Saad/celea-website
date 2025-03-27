@@ -128,7 +128,13 @@ const products = [
       "../images/images/spray.webp",
   },
 ];
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+// let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+let cart = JSON.parse(localStorage.getItem('cart'));
+if (!Array.isArray(cart)) {
+  cart = [];
+}
 
 function setupCartEventListeners() {
   document.querySelectorAll('.btn-cart').forEach(btn => {
