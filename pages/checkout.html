@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Checkout - Celea</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        .vip-checkout-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 100vh;
+            background-color: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .checkout-products {
+            flex: 1;
+            background-color: #f8f9fa;
+            padding: 40px 30px;
+            border-right: 1px solid #e9ecef;
+        }
+
+        .checkout-form-section {
+            flex: 1;
+            padding: 40px 30px;
+        }
+
+        .back-arrow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #2c3e50;
+            transition: color 0.3s ease;
+        }
+
+        .back-arrow:hover {
+            color: #007bff;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #007bff;
+        }
+
+        .order-item {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .order-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .order-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .order-item-details {
+            flex-grow: 1;
+        }
+
+        .order-item-details h3 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .order-item-details p {
+            color: #6c757d;
+            font-size: 14px;
+        }
+
+        .order-summary {
+            background-color: #f1f3f5;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .order-total {
+            text-align: right;
+            font-size: 20px;
+            font-weight: 700;
+            color: #2c3e50;
+            padding-top: 15px;
+            border-top: 2px solid #e9ecef;
+        }
+
+        .checkout-form {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #495057;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.2);
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,123,255,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .vip-checkout-container {
+                flex-direction: column;
+            }
+
+            .checkout-products,
+            .checkout-form-section {
+                border-right: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="vip-checkout-container">
+        <div class="checkout-products">
+            <button class="back-arrow" onclick="window.history.back()">
+                <i class="ri-arrow-left-line"></i>
+            </button>
+            <h2 class="section-title">Your Order</h2>
+            
+            <div id="checkout-items"></div>
+            
+            <div class="order-summary">
+                <div id="checkout-total" class="order-total"></div>
+            </div>
+        </div>
+
+        <div class="checkout-form-section">
+            <h2 class="section-title">Shipping Details</h2>
+            
+            <form id="checkout-form" class="checkout-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" autocomplete="off" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email"  autocomplete="off" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="payment">Payment Method</label>
+                    <select id="payment">
+                        <option>Credit Card</option>
+                        <option>PayPal</option>
+                        <option>Bank Transfer</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Complete Purchase</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkoutItems = document.getElementById('checkout-items');
+            const checkoutTotal = document.getElementById('checkout-total');
+            const checkoutForm = document.getElementById('checkout-form');
+
+            let cartItems = [];
+            const possibleCartKeys = ['cart', 'celea-cart', 'checkout-cart'];
+            
+            for (let key of possibleCartKeys) {
+                const storedCart = localStorage.getItem(key);
+                if (storedCart) {
+                    try {
+                        cartItems = JSON.parse(storedCart);
+                        break;
+                    } catch (error) {
+                        console.error(`Error parsing cart from key ${key}:`, error);
+                    }
+                }
+            }
+
+            let totalPrice = 0;
+            if (cartItems.length === 0) {
+                checkoutItems.innerHTML = '<p>Your cart is empty</p>';
+                checkoutTotal.innerHTML = 'Total: $0.00';
+            } else {
+                cartItems.forEach(item => {
+                    const itemElement = document.createElement('div');
+                    itemElement.classList.add('order-item');
+                    
+                    // Use default image if not provided
+                    const imageUrl = item.image || 'default-product-image.jpg';
+                    
+                    itemElement.innerHTML = `
+                        <img src="${imageUrl}" alt="${item.name}" onerror="this.src='default-product-image.jpg';">
+                        <div class="order-item-details">
+                            <h3>${item.name}</h3>
+                            <p>Quantity: ${item.quantity || 1}</p>
+                            <p>Price: $${(item.price * (item.quantity || 1)).toFixed(2)}</p>
+                        </div>
+                    `;
+                    checkoutItems.appendChild(itemElement);
+                    totalPrice += item.price * (item.quantity || 1);
+                });
+
+                // Display total
+                checkoutTotal.innerHTML = `Total: $${totalPrice.toFixed(2)}`;
+            }
+
+            checkoutForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const address = document.getElementById('address').value;
+
+                if (name && email && address && cartItems.length > 0) {
+                    possibleCartKeys.forEach(key => {
+                        localStorage.removeItem(key);
+                    });
+
+                    window.location.href = 'order-confirmation.html';
+                } else if (cartItems.length === 0) {
+                    Swal.fire({
+                        title: 'Cart is Empty',
+                        text: 'Please add items to your cart before checkout.',
+                        icon: 'warning'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
