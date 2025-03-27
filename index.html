@@ -1,243 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Celea – Skincare Store</title>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
   <style>
-	.scrolling-text {
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  /* background: linear-gradient(to right, #ff9a9e, #fad0c4); */
-  padding: 10px 0;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-}
+    .scrolling-text {
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      /* background: linear-gradient(to right, #ff9a9e, #fad0c4); */
+      padding: 10px 0;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-.scrolling-text p {
-  display: inline-block;
-  animation: scrollText 10s linear infinite;
-}
+    .scrolling-text p {
+      display: inline-block;
+      animation: scrollText 10s linear infinite;
+    }
 
-.scrolling-text img {
-  display: inline-block;
-  animation: scrollText 10s linear infinite;
-}
+    .scrolling-text img {
+      display: inline-block;
+      animation: scrollText 10s linear infinite;
+    }
 
-@keyframes scrollText {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
+    @keyframes scrollText {
+      from {
+        transform: translateX(100%);
+      }
 
-/* Deal of the Day Section */
-.deal-of-the-day {
-  position: relative;
-  background: linear-gradient(135deg, #ffe0e6, #ffcad4);
-  border-radius: 20px;
-  padding: 2rem 1rem;
-  margin: 3rem auto;
-  width: 90%;
-  max-width: 1200px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
+      to {
+        transform: translateX(-100%);
+      }
+    }
 
-.deal-text {
-  z-index: 2;
-  flex: 1 1 300px;
-  text-align: left;
-  color: #4a3d37;
-  animation: fadeInUp 1s ease-out;
-}
+    /* Deal of the Day Section */
+    .deal-of-the-day {
+      position: relative;
+      background: linear-gradient(135deg, #ffe0e6, #ffcad4);
+      border-radius: 20px;
+      padding: 2rem 1rem;
+      margin: 3rem auto;
+      width: 90%;
+      max-width: 1200px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-.deal-text h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  position: relative;
-}
+    .deal-text {
+      z-index: 2;
+      flex: 1 1 300px;
+      text-align: left;
+      color: #4a3d37;
+      animation: fadeInUp 1s ease-out;
+    }
 
-.deal-text h3::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 50px;
-  height: 3px;
-  background-color: #ff758c;
-  border-radius: 2px;
-}
+    .deal-text h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
 
-.countdown {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  align-items: center;
-  animation: slideIn 1s ease-out;
-}
+    .deal-text h3::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 50px;
+      height: 3px;
+      background-color: #ff758c;
+      border-radius: 2px;
+    }
 
-.countdown-box {
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 1rem;
-  border-radius: 12px;
-  text-align: center;
-  width: 80px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
+    .countdown {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      align-items: center;
+      animation: slideIn 1s ease-out;
+    }
 
-.countdown-box:hover {
-  transform: scale(1.05);
-}
+    .countdown-box {
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+      width: 80px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
 
-.countdown-box .number {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ff4e50;
-}
+    .countdown-box:hover {
+      transform: scale(1.05);
+    }
 
-.countdown-box .label {
-  font-size: 0.85rem;
-  color: #4a3d37;
-}
+    .countdown-box .number {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ff4e50;
+    }
 
-.btn-primary {
-  background-color: #ff4e50;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 30px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
+    .countdown-box .label {
+      font-size: 0.85rem;
+      color: #4a3d37;
+    }
 
-.btn-primary:hover {
-  background-color: #ff758c;
-  transform: translateY(-3px);
-}
+    .btn-primary {
+      background-color: #ff4e50;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
 
-/* Decorative Shapes */
-.deal-shapes {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  pointer-events: none;
-}
+    .btn-primary:hover {
+      background-color: #ff758c;
+      transform: translateY(-3px);
+    }
 
-.shape-circle {
-  position: absolute;
-  background: rgba(255, 120, 170, 0.3);
-  border-radius: 50%;
-  animation: floatEffect 6s ease-in-out infinite;
-}
+    /* Decorative Shapes */
+    .deal-shapes {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      pointer-events: none;
+    }
 
-/* Different circle sizes and positions */
-.circle-1 {
-  width: 80px;
-  height: 80px;
-  top: -20px;
-  right: -20px;
-}
+    .shape-circle {
+      position: absolute;
+      background: rgba(255, 120, 170, 0.3);
+      border-radius: 50%;
+      animation: floatEffect 6s ease-in-out infinite;
+    }
 
-.circle-2 {
-  width: 50px;
-  height: 50px;
-  bottom: 10%;
-  left: -25px;
-  animation-delay: 1s;
-}
+    /* Different circle sizes and positions */
+    .circle-1 {
+      width: 80px;
+      height: 80px;
+      top: -20px;
+      right: -20px;
+    }
 
-.circle-3 {
-  width: 100px;
-  height: 100px;
-  bottom: -30px;
-  right: 10%;
-  animation-delay: 2s;
-}
+    .circle-2 {
+      width: 50px;
+      height: 50px;
+      bottom: 10%;
+      left: -25px;
+      animation-delay: 1s;
+    }
 
-/* Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+    .circle-3 {
+      width: 100px;
+      height: 100px;
+      bottom: -30px;
+      right: 10%;
+      animation-delay: 2s;
+    }
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
 
-@keyframes floatEffect {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
 
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes floatEffect {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-15px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+       /* Enhanced Cart Sidebar Styles */
+       #cartSidebar {
+      position: fixed;
+      top: 0;
+      right: -400px;
+      width: 400px;
+      height: 100%;
+      background: #ffffff;
+      box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease-in-out;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cart-item-quantity {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 20px;
+    }
+
+    #cartSidebar.open {
+      right: 0;
+    }
+
+    .cart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .cart-header h2 {
+      margin: 0;
+      color: #4a3d37;
+      font-weight: 600;
+    }
+
+    .cart-close-btn {
+      background: none;
+      border: none;
+      font-size: 44px;
+      color: #ba9a8e;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .cart-close-btn:hover {
+      color: #4a3d37;
+    }
+
+    #cartItems {
+      flex-grow: 1;
+      overflow-y: auto;
+      padding: 20px;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .cart-item-details {
+      flex-grow: 1;
+    }
+
+    .cart-item-name {
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .cart-item-price {
+      color: #cc6c48;
+    }
+
+    .cart-item-remove {
+      background: none;
+      border: none;
+      color: #ff6b6b;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .cart-item-remove:hover {
+      color: #ff4757;
+    }
+
+    .cart-footer {
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .cart-total {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .cart-checkout-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #ba9a8e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .cart-checkout-btn:hover {
+      background-color: #4a3d37;
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 999;
+    }
+
+    #overlay.show {
+      display: block;
+    }
   </style>
 
   <!-- Fonts (Sample) -->
   <!-- You can remove/replace any you don't need -->
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Valky:wght@400&display=swap"
-  />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap"
-  />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
-  />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&display=swap"
-  />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Rozha+One:wght@400&display=swap"
-  />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
-  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Valky:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rozha+One:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" />
 </head>
+
 <body>
 
   <header class="header">
@@ -300,7 +423,7 @@
         </a>
       </div>
 
-	  
+
 
       <div class="brands-grid">
         <!-- Example brand items -->
@@ -327,9 +450,9 @@
       </div>
     </section>
 
-	<div class="scrolling-text">
-		<p>🚀 Exclusive Deals | 10% OFF on Your First Order | Limited Time Offer 🚀</p>
-	  </div>
+    <div class="scrolling-text">
+      <p>🚀 Exclusive Deals | 10% OFF on Your First Order | Limited Time Offer 🚀</p>
+    </div>
 
     <!-- SHOP BY CATEGORIES -->
     <section class="categories-section">
@@ -433,43 +556,38 @@
       </div>
     </section> -->
     <section class="deal-of-the-day">
-        <div class="deal-text">
-          <h3>Exclusive Deal of Today</h3>
-          <div class="countdown">
-            <div class="countdown-box">
-              <span class="number">5</span>
-              <span class="label">days</span>
-            </div>
-            <div class="countdown-box">
-              <span class="number">15</span>
-              <span class="label">hours</span>
-            </div>
-            <div class="countdown-box">
-              <span class="number">48</span>
-              <span class="label">minutes</span>
-            </div>
+      <div class="deal-text">
+        <h3>Exclusive Deal of Today</h3>
+        <div class="countdown">
+          <div class="countdown-box">
+            <span class="number">5</span>
+            <span class="label">days</span>
           </div>
-          <button class="btn-primary">Shop Now</button>
+          <div class="countdown-box">
+            <span class="number">15</span>
+            <span class="label">hours</span>
+          </div>
+          <div class="countdown-box">
+            <span class="number">48</span>
+            <span class="label">minutes</span>
+          </div>
         </div>
-        <!-- Decorative shapes -->
-        <div class="deal-shapes">
-          <div class="shape-circle circle-1"></div>
-          <div class="shape-circle circle-2"></div>
-          <div class="shape-circle circle-3"></div>
-        </div>
-      </section>
-      
+        <button class="btn-primary">Shop Now</button>
+      </div>
+      <!-- Decorative shapes -->
+      <div class="deal-shapes">
+        <div class="shape-circle circle-1"></div>
+        <div class="shape-circle circle-2"></div>
+        <div class="shape-circle circle-3"></div>
+      </div>
+    </section>
+
 
     <!-- SUBSCRIBE SECTION -->
     <section class="subscribe-section">
       <h2>Subscribe To Get 10% Extra Discount</h2>
       <div class="subscribe-wrapper">
-        <input
-          type="email"
-          class="subscribe-input"
-          placeholder="Email Address"
-          aria-label="Email Address"
-        />
+        <input type="email" class="subscribe-input" placeholder="Email Address" aria-label="Email Address" />
         <button class="btn-primary">Shop Now</button>
       </div>
     </section>
@@ -508,8 +626,28 @@
     </div>
   </footer>
 
+  
+  <!-- Cart Sidebar -->
+  <div id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h2>Shopping Cart</h2>
+      <button id="closeCart" class="cart-close-btn">&times;</button>
+    </div>
+    <div id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotalPrice">$0</span>
+      </div>
+      <a href="./checkout.html">
+        <button class="cart-checkout-btn">Proceed to Checkout</button>
+      </a>
+    </div>
+  </div>
+  <div id="overlay"></div>
   <!-- JS -->
+  <script src="./js/products.js"></script>
   <script src="script.js"></script>
 </body>
-</html>
 
+</html>
