@@ -1755,6 +1755,32 @@
     width: 16px;
     margin-left: 5px;
   }
+
+ 
+  
+  /* Further adjustments for even smaller screens (e.g., very narrow phones) */
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.6rem;
+    }
+  
+    .nav-right {
+      align-items: stretch; /* Make them take full width */
+      gap: 0.5rem;
+    }
+  
+    .search-bar {
+      width: 50%;
+    }
+  
+    .cart-button {
+      width: 100%;
+      justify-content: center; /* Center the icon if text is hidden */
+    }
+    input {
+        width: 30px;
+    }
+  }
   
   /* HERO SECTION */
   .hero-section {
