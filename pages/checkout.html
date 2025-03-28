@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIP Checkout - Celea</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Valky:wght@400&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Rozha+One:wght@400&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+  />
     <style>
         * {
             margin: 0;
@@ -14,9 +38,15 @@
         }
 
         body {
-            background-color: #f4f6f9;
+            background: url('../images/images/Rectangle 1447.png') no-repeat center center fixed; 
+            background-size: cover; /* Ensures the image covers the whole screen */
             color: #2c3e50;
             line-height: 1.6;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #2c3e50;
+            padding: 20px;
         }
 
         .vip-checkout-container {
@@ -24,15 +54,21 @@
             max-width: 1200px;
             margin: 0 auto;
             min-height: 100vh;
-            background-color: white;
+            background-color: #EDD0B7;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 60px; /* Adjust the value for more or less rounding */
+            overflow: hidden; /* Ensures child elements don't break the rounded corners */
         }
 
         .checkout-products {
             flex: 1;
-            background-color: #f8f9fa;
-            padding: 40px 30px;
+            background-color: #EDD0B7;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 40px; /* Adjust the value for more or less rounding */
+            overflow: hidden; /* Ensures child elements don't break the rounded corners */
+            padding: 50px 30px;
             border-right: 1px solid #e9ecef;
+            border-radius: 60px; /* Adjust the value for more or less rounding */
         }
 
         .checkout-form-section {
@@ -53,17 +89,33 @@
         }
 
         .back-arrow:hover {
-            color: #007bff;
+            color: #1e1c1a;
         }
 
         .section-title {
-            font-size: 24px;
-            font-weight: 700;
-            color: #2c3e50;
-            margin-bottom: 30px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #007bff;
-        }
+    font-size: 29px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #6d5c4b; /* Softer border color */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: uppercase; /* Makes text stand out */
+    letter-spacing: 1.5px; /* Enhances readability */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 36px; /* Slightly smaller for mobile */
+        margin-bottom: 30px;
+    }
+}
+
 
         .order-item {
             display: flex;
@@ -116,11 +168,11 @@
             font-weight: 700;
             color: #2c3e50;
             padding-top: 15px;
-            border-top: 2px solid #e9ecef;
+            border-top: 2px solid #dedddb;
         }
 
         .checkout-form {
-            background-color: white;
+            background-color: rgb(241, 241, 241);
             border-radius: 10px;
             padding: 30px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -152,14 +204,14 @@
         .form-group textarea:focus,
         .form-group select:focus {
             outline: none;
-            border-color: #007bff;
+            border-color: #BD8B6B;
             box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.2);
         }
 
         .btn-primary {
             width: 100%;
             padding: 15px;
-            background-color: #007bff;
+            background-color: #BD8B6B;
             color: white;
             border: none;
             border-radius: 8px;
@@ -170,7 +222,7 @@
         }
 
         .btn-primary:hover {
-            background-color: #0056b3;
+            background-color: #BD8B6B;
             transform: translateY(-3px);
             box-shadow: 0 4px 10px rgba(0,123,255,0.3);
         }
@@ -294,7 +346,7 @@
                         localStorage.removeItem(key);
                     });
 
-                    window.location.href = 'order-confirmation.html';
+                    window.location.href = "../pages/order-confirmation.html";
                 } else if (cartItems.length === 0) {
                     Swal.fire({
                         title: 'Cart is Empty',

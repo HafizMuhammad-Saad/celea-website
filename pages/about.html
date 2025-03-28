@@ -12,7 +12,131 @@
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,100;1,200;1,300&display=swap" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" />
   	
-  	
+  	<style>
+		.header1 {
+    background-color: #F5EDE0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    font-weight: bold; /* Makes text bold */
+  }
+  
+  .logo {
+    font-size: 2.0rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    font-weight: bold; /* Makes text bold */
+    color: #4a3d37;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ba9a8e;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  /* SEARCH BAR */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+  }
+  
+  .search-icon {
+    width: 16px;
+    margin-right: 5px;
+  }
+  
+  /* CART BUTTON */
+  .cart-button {
+    display: flex;
+    align-items: center;
+    background-color: #ba9a8e;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  
+  .cart-icon {
+    width: 16px;
+    margin-left: 5px;
+  }
+
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  /* BUTTONS */
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+  }
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide nav links on mobile */
+    }
+    .nav-left {
+      gap: 1rem;
+    }
+  
+    
+  
+    .footer {
+      flex-direction: column;
+    }
+  }
+
+  
+	</style>
   	
 </head>
 <body>
@@ -283,5 +407,7 @@
       			facebookInstagramYoutube.addEventListener("click", function () {
         				window.open("www.facebook.com");
       			});
-    		}</script></body>
+    		}
+			</script>
+			</body>
 </html>

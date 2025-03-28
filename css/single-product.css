@@ -42,20 +42,6 @@ body, html {
     max-width: 1200px;
 }
 
-@media (max-width: 768px) {
-    .main-wrap {
-        overflow: auto;
-        height: auto;
-    }
-    .main-wrap .product {
-        flex-direction: column;
-    }
-    /* .main-wrap .product .image-gallery {
-        flex-basis: 100%;
-        height: 300px;
-    } */
-}
-
 .main-wrap .product .image-gallery {
     flex-basis: 40%;
     background: var(--off-white);
@@ -301,4 +287,19 @@ body, html {
 }
 .main-wrap .product .product-details .ingredients .h3{
     padding-bottom: 100px;
+}
+
+
+@media (max-width: 768px) {
+    .main-wrap {
+        overflow: auto;
+        height: auto;
+    }
+    .main-wrap .product {
+        flex-direction: column;
+    }
+    /* .main-wrap .product .image-gallery {
+        flex-basis: 100%;
+        height: 300px;
+    } */
 }

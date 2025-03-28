@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    font-weight: 700; /* Bold font */
+}
 
 :root {
   --antique-gold: #b59e5f;
@@ -15,15 +24,15 @@
 }
 
 body {
-  /* font-family: 'Arial', sans-serif; */
-  font-family: "Cormorant Upright", serif;
   font-optical-sizing: auto;
-  font-weight: 500;
   font-style: normal;
   /* background: linear-gradient(to bottom, #e4cade 0%, #d8bad1 25%, #e8d7cc 40%, #F5EDE0 55%, #F5EDE0 100%); */
-  background-color: var(--bg-pink);
   color: var(--accent-black);
   min-height: 100vh;
+  font-family: "Poppins", sans-serif; /* Example default font */
+    background-color: #fdf8f3;
+    color: #333;
+    overflow-x: hidden;
 }
 
 .container {
@@ -33,18 +42,21 @@ body {
 }
 
 .header {
-  text-align: center;
   margin-bottom: 4rem;
   position: relative;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  font-weight: 500; /* Bold font */
 }
 
 .header h1 {
   font-size: 3rem;
-  color: var(--accent-black);
+  color: var(--light-black);
   position: relative;
   display: inline-block;
   padding-bottom: 1rem;
   animation: titleFloat 3s ease-in-out infinite;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  font-weight: 600; /* Bold font */
 }
 
 @keyframes titleFloat {
@@ -59,14 +71,26 @@ body {
 
 .products-grid {
   display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
   gap: 3rem;
-  /* padding: 1rem; */
+  padding: 1rem;
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    gap: 1rem; /* Reduce gap further for phones */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  }
+
+  
 }
 
 .product-card {
   background: rgba(247, 243, 239, 0.8);
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   position: relative;
@@ -175,6 +199,87 @@ body {
   transition-delay: 0.2s;
 }
 
+  /* HERO SECTION */
+  .hero-section {
+    position: relative;
+    padding: 2rem 1rem;
+    text-align: center;
+    overflow: hidden;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    z-index: 2;
+  }
+  
+  .hero-content .tagline {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 620;
+    color: #4a3d37;
+  }
+  
+  /* ELLIPSES (DECORATIVE) */
+  .ellipse {
+    position: absolute;
+    opacity: 0.6;
+  }
+  .ellipse-4 {
+    top: -5px;
+    left: -10px;
+    width: 160px;
+  }
+  .ellipse-9 {
+    bottom: -1px;
+    left: 75%;
+    width: 40px;
+  }
+  
+  .ellipse-6 {
+    bottom: 0;
+    right: 0;
+    width: 200px;
+  }
+  .ellipse-8 {
+    top: 20px;
+    right: -10px;
+    width: 150px;
+  }
+  .ellipse-7 {
+    bottom: -60px;
+    left: 10%;
+    width: 220px;
+  }
+
+  .btn-primary1 {
+    background-color: #ba9a8e;
+    color: #fff;
+    padding: 0.7rem 1.4rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+    border: 1.6px solid #d3d3d3; /* Light grey border */
+  }
+  .btn-primary2 {
+    background-color: #ba9a8e;
+    color: #fff;
+    padding: 0.7rem 1.4rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1.6px solid #d3d3d3; /* Light grey border */
+  }
+
 .btn {
   padding: 0.8rem 1.8rem;
   border: none;
@@ -213,27 +318,17 @@ body {
   transform: scale(1.05);
 }
 
-@media (max-width: 480px) {
-  .products-grid {
-    gap: 1rem; /* Reduce gap further for phones */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-  }
-
-  
-}
 .filter-bar {
-  /* display: flex; */
-  /* gap: 1.5rem; */
-  /* justify-content: center; */
-  text-align: center;
-
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
   margin-bottom: 3rem;
 }
 
 .filter-btn {
+  /* padding: 1rem 2rem; */
   padding: 8px 16px;
-  margin: 10px;
+
   border: 2px solid var(--antique-gold);
   background: transparent;
   color: var(--accent-black);
@@ -296,4 +391,80 @@ body {
     rgba(247, 243, 239, 0.9) 20%,
     transparent
   );
+}
+/* FOOTER */
+.footer {
+  background-color: #4a3d37;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  gap: 2rem;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-left h3,
+.footer-middle h3,
+.footer-right h3 {
+  margin-bottom: 1rem;
+}
+
+.footer-subscribe {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.footer-subscribe input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  flex: 1;
+}
+
+.footer-subscribe button {
+  padding: 0.5rem 1rem;
+}
+
+.footer-right ul,
+.footer-left ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.footer-right li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.footer-right li:hover {
+  text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide nav links on mobile */
+  }
+  .nav-left {
+    gap: 1rem;
+  }
+
+  /* You can add a hamburger menu for mobile if desired */
+  /* For brevity, it's omitted here */
+
+  .deal-of-the-day {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
 }

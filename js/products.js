@@ -1,140 +1,134 @@
 const products = [
   {
     id: 1,
-    name: "Body Lotion",
-    price: 599,
-    category: "cream",
+    name: "Barrier Butter by Rhode",
+    price: 38,
+    category: "RHODE",
     image:
-      "https://media.gettyimages.com/id/1488453249/photo/make-up-table.jpg?s=612x612&w=gi&k=20&c=rkpqoHB3sdh_J-iw-79JIUKbaHern3t7Z1PdAJUYerE=",
+      "../images/images/img1.jpg",
   },
   {
     id: 2,
-    name: "Mosturising cream",
-    price: 299,
-    category: "whitening",
+    name: "BEAUTY OF JOSEON Sunscreen",
+    price: 50,
+    category: "BEAUTY OF JOSEON",
     image:
-      "https://img.freepik.com/premium-photo/skin-care-products-pink-background-beauty-products-spa-ai-generated_848885-19.jpg",
+      "../images/images/Cover 3.jpg",
   },
   {
     id: 3,
-    name: "Body Wash",
-    price: 199,
-    category: "skin",
+    name: "Foundation by Rare Beauty",
+    price: 100,
+    category: "RARE BEAUTY",
     image:
-      "https://img.freepik.com/premium-photo/beauty-products-with-pink-flowers-soft-pink-background-cosmetic-skincare-products_656098-652.jpg",
+      "../images/images/Cover 4.jpg",
   },
   {
     id: 4,
-    name: "Rice Water",
-    price: 1299,
-    category: "skin",
+    name: "Rhode Lip Treatment",
+    price: 129,
+    category: "RHODE",
     image:
-      "https://img.freepik.com/premium-photo/group-pink-beauty-products-pink-background_14117-981338.jpg",
+      "../images/images/rhode lip.jpg",
   },
   {
     id: 5,
-    name: "Glowing Cream",
-    price: 89,
-    category: "cream",
+    name: "Blue Serum by CENTELLA",
+    price: 40,
+    category: "SKIN CENTELLA",
     image:
-      "https://img.freepik.com/premium-photo/pink-skincare-products-flowers-pink-background_14117-694014.jpg",
+      "../images/images/Cover 18.jpg",
   },
   {
     id: 6,
-    name: "Soft Skin Cream",
-    price: 459,
-    category: "cream",
+    name: "Anua Toner",
+    price: 79,
+    category: "RHODE",
     image:
-      "https://img.freepik.com/premium-photo/group-pink-beauty-products-pink-background_14117-981338.jpg",
+      "../images/images/Cover 2.jpg",
   },
   {
     id: 7,
-    name: "Liquid Foundation",
-    price: 799,
-    category: "makeup",
+    name: "Lip Case by Hailey",
+    price: 30,
+    category: "RHODE",
     image:
-      "../images/images/c3cb2405-536c-43b9-b9e5-c4cb01d6a5e1.webp",
+      "../images/images/Cover 17.jpg",
   },
   {
     id: 8,
-    name: "Matte Lipstick",
-    price: 499,
-    category: "makeup",
+    name: "Skin Barrier Ampoule",
+    price: 49,
+    category: "BEAUTY OF JOSEON",
     image:
-      "../images/images/a-single-matte-lipstick-sleek-and-luxuri_YeO7fo1GTNS6SRwcU0Htdg_pRmv0y3sQ3qnSxC47aFYDg.jpeg",
+      "../images/images/Cover 12.jpg",
   },
   {
     id: 9,
-    name: "Blush Palette",
+    name: "All in One Travel Kit",
     price: 599,
-    category: "makeup",
+    category: "BEAUTY OF JOSEON",
     image:
-      "../images/images/a-single-matte-lipstick-sleek-and-luxuri_QiB7s4eUT7yBoxzFf6d8sw_pRmv0y3sQ3qnSxC47aFYDg.jpeg",
+      "../images/images/Cover 16.jpg",
   },
   {
     id: 10,
-    name: "Highlighter Stick",
-    price: 399,
-    category: "makeup",
+    name: "Blush by Selena Gomez",
+    price: 39,
+    category: "RARE BEAUTY",
     image:
-      "../images/images/face.webp",
+      "../images/images/Cover 14.jpg",
   },
   {
     id: 11,
-    name: "Waterproof Mascara",
-    price: 649,
-    category: "makeup",
+    name: "Lip Liner",
+    price: 19,
+    category: "RARE BEAUTY",
     image:
-      "../images/images/mascara.webp",
+      "../images/images/Cover 15.jpg",
   },
   {
     id: 12,
-    name: "Nude Lip Gloss",
-    price: 299,
-    category: "makeup",
+    name: "Contour Stick",
+    price: 29,
+    category: "RARE BEAUTY",
     image:
-      "../images/images/face.webp",
+      "../images/images/Cover 13.jpg",
   },
   {
     id: 13,
-    name: "Face Primer",
-    price: 899,
-    category: "makeup",
+    name: "Cleansing Oil",
+    price: 89,
+    category: "SKIN CENTELLA",
     image:
-      "../images/images/primer.webp",
+      "../images/images/Cover 1.jpg",
   },
+
   {
     id: 14,
-    name: "Compact Powder",
-    price: 399,
-    category: "makeup",
+    name: "Travel Kit",
+    price: 299,
+    category: "SKIN CENTELLA",
     image:
-      "../images/images/powder.webp",
+      "../images/images/Cover 19.jpg",
   },
   {
     id: 15,
-    name: "Eyeliner Pen",
-    price: 299,
-    category: "makeup",
+    name: "Essence Toner",
+    price: 55,
+    category: "SKIN CENTELLA",
     image:
-      "../images/images/c3cb2405-536c-43b9-b9e5-c4cb01d6a5e1 (1).webp",
-  },
-  {
-    id: 16,
-    name: "Makeup Setting Spray",
-    price: 559,
-    category: "makeup",
-    image:
-      "../images/images/spray.webp",
+      "../images/images/Cover 10.jpg",
   },
 ];
 
-// let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-let cart = JSON.parse(localStorage.getItem('cart'));
-if (!Array.isArray(cart)) {
-  cart = [];
-}
+// let cart = JSON.parse(localStorage.getItem('cart'));
+// if (!Array.isArray(cart)) {
+//   cart = [];
+// }
+
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 function setupCartEventListeners() {
   document.querySelectorAll('.btn-cart').forEach(btn => {
@@ -287,5 +281,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function viewDetails(productId) {
-  window.location.href = `single-product.html?id=${productId}`;
+  window.location.href = `../pages/single-product.html?id=${productId}`;
 }
