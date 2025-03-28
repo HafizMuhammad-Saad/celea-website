@@ -273,6 +273,8 @@ function generateProductCards(filter = 'all') {
       generateProductCards(btn.dataset.filter);
     });
   });
+  setupCartEventListeners();
+
 }
 
 document.addEventListener('DOMContentLoaded', () => {
